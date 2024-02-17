@@ -20,7 +20,7 @@ class CategoryService implements CategoryServiceInterface
     $category->name = $request->name;
     $category->status = "ACTIVE";
 
-    return $this->repository->insert($category);
+    return $this->categoryRepository->insert($category);
   }
   
   public function getDetail($id) {
